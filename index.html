@@ -234,6 +234,56 @@
     <p><strong>Parking:</strong>  If you prefer to drive, there is paid (metered) parking along Parker St., Hemenway St., and Fenway Dr. (some of which is unpaid). There is a parking garage available at Renaissance Park Garage, located at 835 Columbus Ave, Boston, MA 02120.</p>
 
     <h2>Tentative Schedule</h2>
+    <style>
+        table {
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 60%;
+        }
+        @media (min-width: 768px) {
+            .table {
+                width: 100%;
+            }
+
+        }
+        
+        th, td {
+            text-align: center;
+            border-right: 1px dashed #ccc;
+            border-bottom: 1px dashed #ccc;
+            padding: 10px;
+            position: relative;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .time {
+            width: 10%;
+            font-weight: bold;
+        }
+        td[rowspan] {
+            border-bottom: none;
+        }
+        td[rowspan]::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-bottom: 1px dashed #ccc;
+        }
+        .breakfast { background-color: #e6f3ff; }
+        .welcome { background-color: #fff2cc; }
+        .students { background-color: #e6ffe6; }
+        .ama { background-color: #ffe6e6; }
+        .lunch { background-color: #f2e6ff; }
+        .unconference { background-color: #fff5e6; }
+        .working { background-color: #e6fff2; }
+        .coffee { background-color: #f2f2f2; }
+        .night { background-color: #e6e6ff; }
+    </style>
+    
     <table>
         <thead>
             <tr>
@@ -250,8 +300,6 @@
             </tr>
             <tr>
                 <td class="time">9:30</td>
-                <td></td>
-                <td></td>
             </tr>
             <tr>
                 <td class="time">10:00</td>
@@ -261,7 +309,6 @@
             <tr>
                 <td class="time">10:30</td>
                 <td class="students" rowspan="4">Student Presentations</td>
-                <td></td>
             </tr>
             <tr>
                 <td class="time">11:00</td>
@@ -269,11 +316,9 @@
             </tr>
             <tr>
                 <td class="time">11:30</td>
-                <td></td>
             </tr>
             <tr>
                 <td class="time">12:00</td>
-                <td></td>
             </tr>
             <tr>
                 <td class="time">12:30</td>
@@ -285,7 +330,7 @@
             </tr>
             <tr>
                 <td class="time">13:30</td>
-                <td class="unconference" rowspan="3">Student Presentations Overflow / Unconference</td>
+                <td class="unconference" rowspan="3"> Unconference</td>
                 <td class="working" rowspan="3">Thematic Working Group</td>
             </tr>
             <tr>
@@ -293,8 +338,6 @@
             </tr>
             <tr>
                 <td class="time">14:30</td>
-                <td></td>
-                <td></td>
             </tr>
             <tr>
                 <td class="time">15:00</td>
@@ -305,21 +348,17 @@
                 <td class="time">15:30</td>
                 <td class="unconference" rowspan="3">Unconference</td>
                 <td class="unconference" rowspan="3">Unconference</td>
-               
             </tr>
             <tr>
                 <td class="time">16:00</td>
-                
             </tr>
             <tr>
                 <td class="time">16:30</td>
-               
             </tr>
-           
             <tr>
                 <td class="time">17:00</td>
-                <td class="night" rowspan="5">Night Event</td>
-                <td class="night" rowspan="5">Night Event</td>
+                <td class="night" rowspan="7">Tavern of Tales</td>
+                <td class="night" rowspan="7">Timeout Market</td>
             </tr>
             <tr>
                 <td class="time">17:30</td>
